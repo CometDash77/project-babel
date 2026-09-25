@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "协调会话串行追加地图 Decisions 行并通知后，读回地图其他行未丢失，再 complete sel-r11。限制：无 GPU/同批样本听评；IndexTTS 演示站 404；六家 issue 响应率未系统量化。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:06:15+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M11 声音克隆与中文 TTS research 票完成：六类候选横比已入库并关票，主选/备选留给 grilling。",
+      "evidence": "git ls-files docs/selection/11-voice-tts.md 有输出；git log origin/main -- docs/selection/11-voice-tts.md 含 d448318；远端文件 https://github.com/CometDash77/project-babel/blob/main/docs/selection/11-voice-tts.md 返回 HTTP 200。三条证据链接 Breeze README、IndexTTS 官方演示源码、CosyVoice example.py 均返回 HTTP 200。resolution 评论 https://github.com/CometDash77/project-babel/issues/54#issuecomment-5833685523 用 --body-file 写入且 gh 读回中文与链接无损，票状态 CLOSED。地图 https://github.com/CometDash77/project-babel/issues/32 的 Decisions so far 读回 10 行，M11 行存在且其他行保留。遗留限制：未运行 GPU/同批样本听评，长播客效果需要实验确定；IndexTTS 演示站 404，仅可核官方源码；六家 issue 响应率未系统量化；未拍板主备选。"
     }
   ]
 }
