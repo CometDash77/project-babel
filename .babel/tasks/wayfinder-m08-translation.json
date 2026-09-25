@@ -22,8 +22,8 @@
     "docs/research/05-emotion.md",
     "docs/research/06-prosody.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -67,6 +67,28 @@
       "next": [
         "仅提交 M08 文件和本任务包，随后在 #9 发布摘要并核对地图计数"
       ]
+    },
+    {
+      "at": "2026-09-25T03:32:34+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M08 模块稿已提交并推送 50059c5；子票 #9 已评论并关闭；父地图 #1 已追加 M08 固定链接与复用边界且读回确认",
+      "changed": [
+        "docs/research/08-translation-engineering.md"
+      ],
+      "evidence": [
+        "本地检查：58 行、53 链接、相对链接无缺失；GitHub contents ref=50059c5 返回文件；#9 CLOSED 且有 resolution 评论；地图 M08 索引读回；原生子票最新 13/14、M14 blocked_by=0（并行进度）"
+      ],
+      "next": [
+        "后续仅需按实验清单在另行授权的实验阶段验证真实播客效果；M08 调研范围已完成"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:32:50+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "已交付 M08 中文调研稿，完成文件级 AiNiee 核查、横向候选四档分类、两层译文先例与实验清单，并同步子票和地图",
+      "evidence": "docs/research/08-translation-engineering.md 已推送 50059c5；#9 CLOSED 且附 resolution；地图 #1 含 M08 固定链接；未运行软件或播客效果测试，真实质量和长音频工程性需要实验确定"
     }
   ]
 }
