@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r09",
+  "objective": "解「M09 · TTS 前质量检查（文本阶段关口）选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/09-pre-tts-checks.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:40+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:44+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:09:05+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读取 AGENTS.md、docs/model-policy.md、地图与本票，并认领唯一产出范围。指定的 docs/agents/issue-tracker.md 在当前工作树缺失，后续按地图 Notes 与 gh 可用能力执行。",
+      "changed": [],
+      "evidence": [
+        "gh issue view 32/50 成功；git status 为干净的 detached HEAD；已读 M09 模块稿和前置技术栈反查。"
+      ],
+      "next": [
+        "补充 2025–2026 官方证据，形成候选横比，不替 grilling 票拍板。"
+      ]
+    },
+    {
+      "at": "2026-09-25T14:01:26+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M09 候选横比与证据稿：区分已有成品流程、规则检查、读法/音节、无参考语义评分、时长参考方法；不指定主选/备选。",
+      "changed": [
+        "docs/selection/09-pre-tts-checks.md"
+      ],
+      "evidence": [
+        "已读 M09 模块稿和前置反查；2026-09-25 gh api 核对六仓库 stars/pushed/release/license；HTTP HEAD 抽查 Translate Toolkit、COMET、WeTextProcessing、pypinyin、FastPitch 官方链接为 200，并修复一处 404 用例链接。"
+      ],
+      "next": [
+        "只提交本产出与 packet，推送 origin/main；按地图 Notes 读回远端文件与 resolution 评论，关票后等待主协调会话写 Decisions 并通知 complete。"
+      ]
+    }
+  ]
+}
