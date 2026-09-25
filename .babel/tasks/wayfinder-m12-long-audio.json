@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "wayfinder-m12-long-audio",
+  "objective": "研究两小时中文重演播客的分段生成、缓存续跑、时间线与拼接方案，核验 Bridge 身份及替代候选",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/12-long-audio-assembly.md"
+  ],
+  "constraints": [
+    "本会话只推进 M12；只调研不写实现代码或生成音频；个人使用；区分 TTS 模型和外部编排能力"
+  ],
+  "acceptance": [
+    "中文模块稿逐候选分四档，给出官方证据、维护许可平台资源信息及需实测的接缝漂移恢复问题；同步子票与地图"
+  ],
+  "references": [
+    "https://github.com/CometDash77/project-babel/issues/13",
+    "https://github.com/CometDash77/project-babel/issues/1",
+    "docs/model-policy.md",
+    "docs/handoff.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:21:21+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:35+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:27:04+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已完成中文 M12 初稿：Bridge 身份未定，比较分段工作流、时间线、FFmpeg 渲染和长输入模型，区分宣称与两小时验证",
+      "changed": [
+        "docs/research/12-long-audio-assembly.md"
+      ],
+      "evidence": [
+        "已核对官方 README/文档、GitHub API 维护与许可快照；rg 检查四档分类及实验清单；未运行模型或音频实验"
+      ],
+      "next": [
+        "复核文档与仓库状态，仅提交本票文件，随后同步 #13 与地图 #1"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:31:27+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M12 中文调研稿已提交至 d5c7110 并推送；#13 结论评论已发布且关闭，地图 #1 已写入 M12 索引",
+      "changed": [
+        "docs/research/12-long-audio-assembly.md"
+      ],
+      "evidence": [
+        "git diff --cached --check -- docs/research/12-long-audio-assembly.md 通过；gh api 可读 d5c7110 与报告文件；#13 CLOSED/commentCount=1；地图 #1 回读含 M12 链接"
+      ],
+      "next": [
+        "剩余限制：Bridge 精确项目需要原始 URL；两小时接缝、音色漂移、资源及故障恢复均需要实验确定；本票不做音频实验"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:31:39+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "完成 M12 中文资料调研，逐候选分类并同步子票与地图；保留 Bridge 身份及两小时实测限制",
+      "evidence": "报告 d5c7110；git diff --cached --check 通过；GitHub #13 CLOSED；地图 #1 回读含 M12 模块稿链接"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "id": "wayfinder-m13-final-mix",
+  "objective": "调研 M13 最终混音的成熟开源候选与自建编排边界，交付中文模块稿",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/13-final-mix.md"
+  ],
+  "constraints": [
+    "只调研，不制作样片或实现代码；当前仅供个人使用"
+  ],
+  "acceptance": [
+    "多候选逐项证据、四档归类、具体复用点、需要实验确定；核查并更新 #14 与 #1"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/handoff.md",
+    "docs/agents/issue-tracker.md",
+    "https://github.com/CometDash77/project-babel/issues/14",
+    "https://github.com/CometDash77/project-babel/issues/1"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:21:37+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:53+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:28:50+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M13 中文模块稿初稿：比较 FFmpeg、ffmpeg-normalize、ffmpeg-python、Pydub、Editly、auto-editor、mixing、Auphonic；区分真实 sidechain 与固定衰减，提出 M12 接口假设、特别风险和待实验清单。",
+      "changed": [
+        "docs/research/13-final-mix.md"
+      ],
+      "evidence": [
+        "已核对官方文档、GitHub 仓库元数据和 release；尚未安装、混制或做两小时实测。"
+      ],
+      "next": [
+        "核查报告证据与范围，之后更新 #14 resolution 和 #1 地图。"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:33:44+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M13 模块稿已提交并发布（6ce82fd）；根据刚完成的 M12 模块稿修订了交接边界；#14 已附 resolution 并关闭，#1 已增决策与进度。",
+      "changed": [
+        "docs/research/13-final-mix.md"
+      ],
+      "evidence": [
+        "本地结构检查：UTF-8、所需章节/8 候选齐全、33 个来源链接；GitHub 读回 #14 CLOSED 且含 resolution、#1 含 M13 决策和 completed=13/14、M14 blocked_by=0；远端报告文件可读取。"
+      ],
+      "next": [
+        "报告只基于资料；未安装、混制样片或跑两小时实测。残留、重叠、接缝、响度、长图性能和时间坐标列待实验；M14 汇总后再定接口和参数。"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:34:01+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M13 最终混音资料调研、模块稿和子票/地图同步已完成；无实现代码或样片。",
+      "evidence": "报告提交 6ce82fd 并可从远端读取；#14 CLOSED 且有 resolution；#1 M13 记录与 completed=13/14 已读回；M14 blocked_by=0。"
+    }
+  ]
+}

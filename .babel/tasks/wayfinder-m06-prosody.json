@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "wayfinder-m06-prosody",
+  "objective": "Resolve M06 prosody and acoustic feature research with an evidence-backed Chinese module report",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/research/06-prosody.md"
+  ],
+  "constraints": [
+    "Research only; uncertain claims marked 需要实验确定; resolve at most one wayfinder ticket this session"
+  ],
+  "acceptance": [
+    "Compare multiple tools for F0, energy, pace, voice quality and curve-to-event compression; classify reuse, cite primary evidence, update M06 and map"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/agents/issue-tracker.md",
+    "https://github.com/CometDash77/project-babel/issues/7"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:04:11+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:04:22+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:09:25+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Claimed M06 and drafted a Chinese primary-source comparison of six candidates. Personal-use clarification changes openSMILE and Parselmouth from commercial-screening exclusions to usable research candidates; compression remains an unverified layer.",
+      "changed": [
+        "docs/research/06-prosody.md"
+      ],
+      "evidence": [
+        "GitHub M06 open, assigned, blocked_by=0; official repositories/docs/license/release/issue inspected; no model or long-audio run."
+      ],
+      "next": [
+        "Verify report and links, publish report, post resolution, close M06, update map and native dependency counts. Revisit prior M05 commercial-license framing separately if needed."
+      ]
+    },
+    {
+      "at": "2026-09-25T03:13:15+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Published M06 report at 441bc76; updated issue resolution and map. A map Current progress regex replacement initially failed after other edits succeeded; readback showed stale counts, then corrected and verified.",
+      "changed": [
+        "docs/research/06-prosody.md"
+      ],
+      "evidence": [
+        "git diff --cached --check exit 0; git push origin main succeeded; GitHub contents API confirms report at 441bc76; M06 CLOSED with one resolution comment; map gist/personal scope/progress readback true; native completed=3/14, M07 blocked_by=0, M14 blocked_by=10."
+      ],
+      "next": [
+        "Later session may take M07 or another unclaimed frontier ticket. M05 commercial-license framing should be reevaluated for personal use before final model selection; no acoustic model run or two-hour podcast benchmark."
+      ]
+    },
+    {
+      "at": "2026-09-25T03:13:15+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "Resolved M06 prosody research ticket and synchronized map under personal-use scope.",
+      "evidence": "Report commit 441bc76 on origin/main; issue #7 CLOSED with one comment; map updated; native sub-issues completed=3/14, M07 blocked_by=0, M14 blocked_by=10; no extractor inference run."
+    }
+  ]
+}

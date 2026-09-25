@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "wayfinder-m01-acquisition",
+  "objective": "Resolve M01 audio acquisition and preprocessing research with an evidence-backed Chinese module report",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/research/01-acquisition-preprocessing.md"
+  ],
+  "constraints": [
+    "Research only; personal use; uncertain performance and stability marked 需要实验确定; this session addresses M01 only"
+  ],
+  "acceptance": [
+    "Compare multiple acquisition and preprocessing candidates from final reenactment audio needs; classify reuse with specific interface; cite primary sources; update issue and map"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/agents/issue-tracker.md",
+    "https://github.com/CometDash77/project-babel/issues/2"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:19:29+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:19:29+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:22:19+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "GitHub claim succeeded after correcting PowerShell @me quoting; official-source comparison completed for RSS, site downloads, conversion, slicing and EBU R128. Selected report structure and explicit untested limits.",
+      "changed": [],
+      "evidence": [
+        "M01 open, assigned to CometDash77, blocked_by=0; official repositories, docs, licenses, releases and issues inspected; no downloader or audio processing run."
+      ],
+      "next": [
+        "Write Chinese module report; verify citations and scope; publish, update issue and map, read back."
+      ]
+    },
+    {
+      "at": "2026-09-25T03:24:48+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Drafted Chinese M01 module report with seven source-checked candidates and selection boundaries; corrected pydub maintenance/license after API verification.",
+      "changed": [
+        "docs/research/01-acquisition-preprocessing.md"
+      ],
+      "evidence": [
+        "git diff --cached --check passed; report cites official repositories/docs/licenses/releases/issues; no real audio run."
+      ],
+      "next": [
+        "Publish report, add issue resolution, close M01, update map and read back."
+      ]
+    },
+    {
+      "at": "2026-09-25T03:27:00+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Published M01 report at commit 0fd3a31, added resolution to issue #2, closed it, and updated map #1 with decision pointer and progress.",
+      "changed": [
+        "docs/research/01-acquisition-preprocessing.md"
+      ],
+      "evidence": [
+        "git diff --cached --check passed before commit; git push origin main succeeded; GitHub contents API returned report; issue #2 CLOSED with one comment and report link; map readback confirms M01 pointer and 4/14 progress; native sub-issues completed=4/14, M14 blocked_by=9."
+      ],
+      "next": [
+        "No M01 work remains in this session. Run RSS/YouTube and two-hour FFmpeg/R128 experiments in later scoped work before freezing parameters."
+      ]
+    },
+    {
+      "at": "2026-09-25T03:27:00+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "Resolved M01 research ticket and synchronized GitHub map under personal-use scope.",
+      "evidence": "Report commit 0fd3a31 on origin/main; issue #2 CLOSED; map updated; native 4/14 completed and M14 blocked_by=9; no real audio/tool run."
+    }
+  ]
+}

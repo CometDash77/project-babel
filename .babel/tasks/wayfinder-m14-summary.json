@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "id": "wayfinder-m14-summary",
+  "objective": "把 M01–M13 十三份模块稿合并为终稿 docs/research/babel-reuse-map.md：给出完整架构图（成熟轮子/胶水层/自研），并逐条证实/证伪/部分成立裁决用户关于自研边界的五点判断，跨模块矛盾与证据缺口汇总为需要实验确定清单",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/research/babel-reuse-map.md"
+  ],
+  "constraints": [
+    "全程只调研不编码；未执行的实验只能列为计划；中文输出"
+  ],
+  "acceptance": [
+    "终稿四档口径一致(DIRECT REUSE/WRAP·ADAPT/REFERENCE/REJECT)；每条结论回链具体模块稿具体章节；五点判断逐条裁决含理由；需要实验确定清单收齐跨模块矛盾与缺口；不写实现代码"
+  ],
+  "references": [
+    "gh issue 15, gh issue 1, docs/research/01..13"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T06:32:15+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T06:32:15+00:00",
+      "action": "claim",
+      "model": "mimo",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T06:46:14+00:00",
+      "action": "note",
+      "model": "mimo",
+      "summary": "M14 done: final synthesis written",
+      "changed": [],
+      "evidence": [],
+      "next": []
+    },
+    {
+      "at": "2026-09-25T06:46:30+00:00",
+      "action": "note",
+      "model": "mimo",
+      "summary": "Resolution comment posted on gh issue 15 and issue closed; map issue 1 updated with the decision line and end-state progress section",
+      "changed": [],
+      "evidence": [
+        "issuecomment-5828103331 on gh 15; sub_issues readback closed=14 total=14; map body readback intact"
+      ],
+      "next": [
+        "Mark task complete next"
+      ]
+    },
+    {
+      "at": "2026-09-25T06:46:41+00:00",
+      "action": "complete",
+      "model": "mimo",
+      "summary": "M14 final synthesis docs/research/babel-reuse-map.md written (187 lines): unified 4-tier taxonomy, 3-layer architecture (wheels/glue/7 self-build items), verdict table on user self-build judgment (3 confirmed / 2 partially), 21-item experiment list",
+      "evidence": "Read all 13 module reports in full; resolution comment issuecomment-5828103331 posted and gh issue 15 closed; map gh issue 1 updated (decision line + end-state section); sub_issues readback closed=14/total=14; no code, no model runs"
+    }
+  ]
+}

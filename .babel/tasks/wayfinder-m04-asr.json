@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "wayfinder-m04-asr",
+  "objective": "Resolve M04 ASR and precise timeline research issue with evidence-backed Chinese module report",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/research/04-asr-timeline.md"
+  ],
+  "constraints": [
+    "Research only; uncertain claims marked 需要实验确定; one wayfinder ticket this session"
+  ],
+  "acceptance": [
+    "Compare multiple ASR and alignment candidates; record capabilities, maintenance, license, API, platform, GPU, long-audio risk, timeline schema and reuse decision; update issue and map"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/agents/issue-tracker.md",
+    "https://github.com/CometDash77/project-babel/issues/5"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T02:29:26+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T02:29:36+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T02:34:46+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Selected M04 because it blocks Smart Context and final synthesis; researched six primary-source candidates and wrote evidence-backed module report. GPT retained cross-module schema and reuse judgment despite routine research routing suggestion.",
+      "changed": [
+        "docs/research/04-asr-timeline.md"
+      ],
+      "evidence": [
+        "GitHub API checked live unclaimed/blocked_by=0 and blocking=[8,15]; official repositories, source, releases and issues checked; git diff --check passed; no local model run."
+      ],
+      "next": [
+        "Verify report and publication path; update issue body, resolution comment, close ticket, append map gist."
+      ]
+    },
+    {
+      "at": "2026-09-25T02:38:58+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Published report at commit 881fa19; wrote actual status and next steps into M04 body; posted resolution comment; closed M04; updated map Decisions so far and fog wording. No new ticket was specifiable yet.",
+      "changed": [
+        "docs/research/04-asr-timeline.md"
+      ],
+      "evidence": [
+        "git push origin main succeeded; GitHub contents API returned report path; issue #5 CLOSED with one resolution comment; map native sub-issues completed=1/14, M07 blocked_by=2, M14 blocked_by=12; report diff check passed."
+      ],
+      "next": [
+        "Continue with another unclaimed frontier issue in a later session; M05 and M06 unlock M07. Run candidate experiments after module coverage."
+      ]
+    },
+    {
+      "at": "2026-09-25T02:38:58+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "Resolved M04 ASR and precise timeline research ticket and synchronized map.",
+      "evidence": "GitHub report commit 881fa19; issue #5 closed; map issue #1 updated and native dependency counts confirmed."
+    }
+  ]
+}

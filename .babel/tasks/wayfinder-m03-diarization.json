@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "wayfinder-m03-diarization",
+  "objective": "Research speaker diarization, overlap detection, and local overlapping speech separation for personal-use podcast workflow; resolve issue #4",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/03-diarization-overlap.md"
+  ],
+  "constraints": [
+    "Research only; no implementation code; preserve original multi-speaker timeline; do not treat one speaker field as complete overlap representation"
+  ],
+  "acceptance": [
+    "Chinese module report with multiple official-source candidates, four-tier reuse classification, persistent multi-speaker intervals, and concrete experiment checklist; synchronize issue #4 and map #1"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/handoff.md",
+    "docs/research/04-asr-timeline.md",
+    "docs/agents/issue-tracker.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:20:45+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:20:58+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:26:51+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Wrote cited Chinese M03 report: overlap-aware diarization, separate OSD and local speech separation, four-tier reuse classification, multi-speaker intervals, and experiment checklist; reviewed M04 boundary and official model cards/source/release evidence",
+      "changed": [
+        "docs/research/03-diarization-overlap.md"
+      ],
+      "evidence": [
+        "git diff --check passed; verified source outputs and licenses from pyannote Community-1, Nemotron-3, NeMo, SpeechBrain, Asteroid official cards and source; no model run"
+      ],
+      "next": [
+        "Commit report, synchronize issue #4 and map #1, read back live state, complete packet"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:32:04+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Published report commit 7aae8af; issue #4 updated with report link and resolution, then closed; map #1 decision pointer and durable comment added; read-back confirmed M03 and prior entries",
+      "changed": [
+        "docs/research/03-diarization-overlap.md"
+      ],
+      "evidence": [
+        "git show 7aae8af: one report file; gh API report file at 7aae8af returned 200; issue #4 CLOSED, assigned, body and comment present; map #1 has M03/M02/M10/M12 decisions; native child summary 11/14 and M14 blocked_by=2 at last snapshot"
+      ],
+      "next": [
+        "Complete packet; no model inference or two-hour podcast evaluation performed; experiments remain for future scope"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:32:20+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M03 research report delivered and synchronized with issue #4 and map #1; preserved multi-speaker intervals and separated diarization, overlap detection, and local speech separation",
+      "evidence": "Report commit 7aae8af pushed; issue #4 closed with resolution comment; map #1 decision link read back; git diff --cached --check passed for staged report; no model run, remaining experimental limits documented"
+    }
+  ]
+}

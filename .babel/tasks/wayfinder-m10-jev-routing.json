@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "wayfinder-m10-jev-routing",
+  "objective": "评估 Jev 模型用于异常修复路由的价值并形成中文候选复用模块稿",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/10-jev-routing.md"
+  ],
+  "constraints": [
+    "只做个人用途调研，不写实现代码；本会话只推进 GitHub issue #11"
+  ],
+  "acceptance": [
+    "核验 Jev 官方资料；从失败信号、动作、成本与防循环比较多个方案并逐项四档分类；未知标需要实验确定；更新子票与地图"
+  ],
+  "references": [
+    "https://github.com/CometDash77/project-babel/issues/11",
+    "https://github.com/CometDash77/project-babel/issues/1",
+    "C:/Users/77182/.agents/skills/research/SKILL.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:21:09+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:17+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:27:32+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已找到 TypeSafe 官方 Jev 资料；完成中文模块稿，结论是不把 Jev 设为必经路由，少数语义歧义的价值待实验。对比规则、Jev、scikit-learn、零样本 NLI、OpenAI 结构化输出。",
+      "changed": [
+        "docs/research/10-jev-routing.md"
+      ],
+      "evidence": [
+        "直接检查模块稿存在、含四档分类、官方来源链接、失败信号/动作/成本/防循环及需要实验确定；未调用任何模型或运行样片。"
+      ],
+      "next": [
+        "核查并同步 GitHub 子票和地图，完成任务包。"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:30:49+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "模块稿已提交并推送 2e6a7b2；M10 #11 已评论并关闭，地图 #1 已加入索引与进度快照。",
+      "changed": [
+        "docs/research/10-jev-routing.md"
+      ],
+      "evidence": [
+        "git diff --cached --check 通过；GitHub contents API 读回提交中的文件；issue #11 CLOSED 且评论读回；地图 #1 决策索引读回。地图计数并行变化，以实时状态为准。"
+      ],
+      "next": [
+        "无本票剩余工作；后续另票做真实样本实验，准确率、中文表现、阈值、成本仍需要实验确定。"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:31:03+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M10 Jev 异常修复路由调研交付，子票和地图已同步",
+      "evidence": "docs/research/10-jev-routing.md 已推送提交 2e6a7b2；GitHub 文件、issue #11 CLOSED/评论、地图 #1 索引均读回确认；未做模型实测。"
+    }
+  ]
+}

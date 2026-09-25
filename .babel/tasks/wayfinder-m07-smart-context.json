@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "wayfinder-m07-smart-context",
+  "objective": "调研并形成 M07 Smart Context 21句结构化上下文中文模块稿",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/07-smart-context.md"
+  ],
+  "constraints": [
+    "只写中文调研稿，不写实现代码；当前仅供个人使用；M03 未完成，speaker 与 overlap 保留可修订边界"
+  ],
+  "acceptance": [
+    "逐候选四档分类与具体复用点；区分 M04/M05/M06 原生字段、时间轴推导和待验证观测；报告有一手证据、实验未知项，并更新子票与地图"
+  ],
+  "references": [
+    "docs/research/04-asr-timeline.md",
+    "docs/research/05-emotion.md",
+    "docs/research/06-prosody.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:20:40+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:20:41+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:26:11+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已完成 M07 中文资料调研稿：比较字幕滑窗、分批记忆、时间区间和交换格式；提出 21 句目标句投影与可修订来源边界",
+      "changed": [
+        "docs/research/07-smart-context.md"
+      ],
+      "evidence": [
+        "已读 M04/M05/M06 稿及官方 README/格式规范/源码；直接检查报告四档分类、字段来源及需要实验确定清单；未运行模型或长音频"
+      ],
+      "next": [
+        "复核报告并发布固定版本；更新 #8 与地图 #1 后读回核验"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:33:12+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "报告已发布并据同步完成的 M03 调研修订 speaker/overlap 边界；#8 已关闭、地图 #1 已索引固定版本",
+      "changed": [
+        "docs/research/07-smart-context.md"
+      ],
+      "evidence": [
+        "commit fea9b79 已推送；GitHub contents API 返回报告；#8 CLOSED 且两条结论评论；地图包含 M07 决议与同步记录；原生子票 completed=13/14，M14 blocked_by=0；未运行模型/长播客"
+      ],
+      "next": [
+        "只剩后续实验：21句窗口效果、M03 speaker/overlap、M05/M06 事件压缩和跨平台长音频需另票验证"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:33:13+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M07 中文调研稿完成并发布；子票关闭、地图已更新；未写实现代码",
+      "evidence": "git show --check fea9b79 通过；GitHub 线上报告可读；#8 CLOSED；地图 M07 固定版本链接读回；模型推理和两小时播客未执行，相关效果均需实验确定"
+    }
+  ]
+}

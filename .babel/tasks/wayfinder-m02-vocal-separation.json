@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "wayfinder-m02-vocal-separation",
+  "objective": "调研英文播客人声与背景声分离候选，兼顾分析人声与可重混背景声，并交付 M02 中文模块稿及逐候选复用分类",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/02-vocal-separation.md"
+  ],
+  "constraints": [
+    "只调研不实现；个人使用；不将宣传样例视为本项目实测；不得改动已有其他任务范围"
+  ],
+  "acceptance": [
+    "多候选官方资料/源码/许可/维护/限制证据；覆盖多人重叠、音乐、串音、伪影、长节目成本、原节目时间坐标；四档分类和具体复用点；未知项标需要实验确定；同步 #3 与地图 #1"
+  ],
+  "references": [
+    "https://github.com/CometDash77/project-babel/issues/3",
+    "https://github.com/CometDash77/project-babel/issues/1",
+    "docs/model-policy.md",
+    "C:/Users/77182/.agents/skills/research/SKILL.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:20:29+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:20:39+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:26:12+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M02 中文模块稿：播客同域 PodcastMix 与歌曲模型封装横比，厘清首窗读取、两 stem 重混、局部分离及时间回填限制",
+      "changed": [
+        "docs/research/02-vocal-separation.md"
+      ],
+      "evidence": [
+        "GitHub 官方 README/源码/论文、仓库与 release API 快照；文档 UTF-8 可读取，四档分类齐全，diff whitespace check 无错误；未运行模型"
+      ],
+      "next": [
+        "核查文件与链接，发布 #3 结论、更新地图，完成任务包"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:29:50+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M02 文档已单文件提交 e2e33cd 并推送；#3 已附结论关闭；#1 已加模块索引和 M02 完成时快照",
+      "changed": [
+        "docs/research/02-vocal-separation.md"
+      ],
+      "evidence": [
+        "本地 UTF-8/关键词核查通过；远程文件 GitHub API 读回；#3 CLOSED 且评论可见；地图原生子票 M02 关闭后 5/14、M14 blocked_by=8，之后并发会话计数继续变化"
+      ],
+      "next": [
+        "保留未知：PodcastMix 许可、播客音质/背景重混、多人串音、两小时资源与时间回填均需要实验确定；本票无需实现"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:30:04+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M02 研究完成，中文模块稿、逐候选四档复用分类、子票 resolution 与地图索引均已交付；未运行模型",
+      "evidence": "e2e33cd 已推送；本地文档检查通过；GitHub 远程文件、#3 CLOSED、#1 索引均读回；未知项已列为需要实验确定"
+    }
+  ]
+}
