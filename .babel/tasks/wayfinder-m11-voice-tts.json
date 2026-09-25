@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "wayfinder-m11-voice-tts",
+  "objective": "Research open-source voice cloning and Chinese TTS for podcast reenactment, issue #12",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/11-voice-clone-tts.md"
+  ],
+  "constraints": [
+    "Research only; no training or sample generation; personal use; distinguish model and code licenses; do not modify other module reports"
+  ],
+  "acceptance": [
+    "Chinese cited module report compares multiple candidates across ticket dimensions, four classifications, same-sample evaluation plan; update packet, issue and map"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/handoff.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:21:16+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:28+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:24:28+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Claimed issue #12 after checking open/unassigned/unblocked; reviewed official repositories and model cards for six candidates; distinguishing API support from actual cross-language reenactment quality",
+      "changed": [],
+      "evidence": [
+        "gh api issue 12: open, blocked_by=0, assignee CometDash77; official README/model cards inspected"
+      ],
+      "next": [
+        "Write cited Chinese module report, verify source/license claims, then update issue and map"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:28:00+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Wrote docs/research/11-voice-clone-tts.md: six official candidates plus rejected non-clone Qwen variants, four separate capability judgments, per-sentence reference matrix, same-sample blind-listening plan",
+      "changed": [
+        "docs/research/11-voice-clone-tts.md"
+      ],
+      "evidence": [
+        "Official GitHub repos/model cards/licenses reviewed; git diff --check passed; no model inference or samples"
+      ],
+      "next": [
+        "Verify final links, commit only M11 report and packet, update GitHub issue #12 and map #1"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:32:11+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "Published M11 report at commit e7093b4; commented on and closed issue #12; added report pointer to map #1; original model quality and two-hour stability remain untested",
+      "changed": [
+        "docs/research/11-voice-clone-tts.md"
+      ],
+      "evidence": [
+        "git show --check e7093b4 passed; GitHub API: issue #12 closed, map #1 contains report link, sub_issues_summary completed=12/14, M14 blocked_by=1 at readback"
+      ],
+      "next": [
+        "M14 should integrate report; later experiment should run same-sample blind listening and resource/recovery benchmarks"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:32:38+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M11 research delivered: cited Chinese report for six candidates, four classifications, per-sentence reference assessment and same-sample experiment plan; GitHub issue #12 resolved and map #1 updated",
+      "evidence": "git show --check e7093b4 passed; remote report exists; issue #12 closed with resolution comment; map #1 contains M11 report link; no inference, training or sample generation performed"
+    }
+  ]
+}
