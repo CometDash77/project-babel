@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r02",
+  "objective": "解「M02 · 人声与背景音分离选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/02-vocal-separation.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:13+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:19+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:26+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已阅读地图与本票、模块稿和前置反查稿。",
+      "changed": [],
+      "evidence": [
+        "docs/agents/issue-tracker.md 在当前工作树与 origin/main 均不存在；地图 #32 Notes 给出本票写入与关票读回要求。"
+      ],
+      "next": [
+        "核查 2025–2026 候选维护、release、许可、真实案例和风险；只写候选证据，不拍板。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:58:26+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已完成 M02 候选证据稿：区分播客同域证据、歌曲分离工程封装与成品配音集成案例；未指定主选或备选。",
+      "changed": [
+        "docs/selection/02-vocal-separation.md"
+      ],
+      "evidence": [
+        "核对 PodcastMix、audio-separator、Demucs、UVR、TUSS 的官方仓库、API、release、issue 与推理说明；4 个关键证据链接 HTTP 200；git diff --no-index --check 无空白错误。"
+      ],
+      "next": [
+        "只提交并推送本稿与 sel-r02 packet，读回远端文件和评论后关闭本票；共享地图 Decisions 与 packet complete 由主协调会话后续处理。"
+      ]
+    }
+  ]
+}
