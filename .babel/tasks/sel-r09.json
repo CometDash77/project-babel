@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "等待主协调会话串行追加地图 Decisions 并通知本会话读回；之后再 complete sel-r09。拟追加 gist：规则检查、读法/音节与无参考语义评分各有成熟子能力，但完整播客文本关口及目标声音时长需实验确定。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:07:58+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M09 TTS 前文本质量检查 research 已交付候选横比与证据，票已关闭，地图 Decisions 已由主协调会话串行追加；未指定主选/备选。",
+      "evidence": "git ls-files 命中 docs/selection/09-pre-tts-checks.md；git log origin/main 含文稿提交 72204f0；远端文件 URL HTTP 200；Translate Toolkit pofilter、WeTextProcessing mapping、COMET 模型许可三证据链接 HTTP 200；resolution 评论 issuecomment-5833712537 经 gh issue view 读回无转义损坏且本票 CLOSED；gh issue view 32 读回 Decisions so far 含 M09 research 行，其他 research 行保留。遗留限制：未安装工具、未跑 GPU 或两小时播客；英中口语误报、读法与目标声音时长、听评和资源成本需要实验确定；主选/备选留给 grilling 票。"
     }
   ]
 }
