@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "推送修正文稿，更新 resolution 评论中的提交引用并读回后关票。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:07:52+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M08 翻译工程 research 票已关闭；候选证据稿已推送，地图 Decisions 已由主协调会话串行追加并读回。未拍板主选/备选。",
+      "evidence": "git ls-files 有 docs/selection/08-translation.md；git log origin/main -- docs/selection/08-translation.md 含 59c87ddd；GitHub Contents API 返回远端文件 URL 与 sha db6b96d5。抽查 AiNiee 原版 CacheItem、AiNiee-Next CacheItem、VideoLingo 官方介绍 3 条证据链接均可访问。GitHub #48 resolution 评论 issuecomment-5833671606 经 gh 读回无转义损坏，票状态 CLOSED。地图 #32 Decisions 读回含 M08 research gist，原有 research 行仍在。限制：未安装工具、调用模型或运行两小时播客；双层稿、上下文/时轴保全、长节目恢复与成本需实验确定；主选/备选留待 grilling 票。"
     }
   ]
 }
