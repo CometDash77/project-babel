@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -62,6 +62,13 @@
       "next": [
         "检查矩阵与证据链接，提交推送并按地图 Notes 逐项读回。"
       ]
+    },
+    {
+      "at": "2026-09-25T13:04:17+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "完成三款成熟配音成品项目的 M01–M13 技术栈矩阵与可借鉴点；未拍板主选/备选，GitHub research 票已关闭并写入地图 Decisions。",
+      "evidence": "提交 60828a0 已推送 origin/main；git ls-files 与 git log origin/main 读回产出，GitHub Contents API 返回远端 URL/SHA；pyVideoTrans 架构、VideoLingo 介绍、SoniTranslate 用户 issue 三链接可打开；resolution 评论经 gh 读回无转义损坏；地图 Decisions 行经 gh 读回且 Notes/28 子票/汇总票原内容仍在；gh 读回本票 CLOSED。局限：未运行音频或 GPU 实验，没有公开可核的两小时英文多人播客中文同声线成功案例，效果与资源需实验确定。"
     }
   ]
 }
