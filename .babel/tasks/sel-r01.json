@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "id": "sel-r01",
+  "objective": "解「M01 · 音频获取与预处理选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/01-acquisition.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:07:58+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:03+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:11+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已认领本票唯一产出范围；指定的 docs/agents/issue-tracker.md 在当前工作树不存在，后续依地图正文和 gh 实际读回执行。",
+      "changed": [],
+      "evidence": [],
+      "next": []
+    },
+    {
+      "at": "2026-09-25T13:10:08+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已写入 M01 候选横比：RSS/站点/解析器/桌面参照与 FFmpeg/响度/Python 切片；将成品先例、维护许可、接口推论及需实验确定项分开，未指定主备。",
+      "changed": [
+        "docs/selection/01-acquisition.md"
+      ],
+      "evidence": [
+        "官方文档、GitHub 仓库 API/release、成品项目文档与公开问题已核对；尚未进行实际媒体实验。"
+      ],
+      "next": [
+        "核对证据链接与文稿，提交推送并按地图 Notes 读回。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:58:37+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "继续原 packet；已只读核对主目录 issue-tracker，并补公开 issue 响应抽样，避免以数量或单例推断总体维护质量。",
+      "changed": [
+        "docs/selection/01-acquisition.md"
+      ],
+      "evidence": [
+        "GitHub issue API：podcast-dl/163、yt-dlp/17456、feedparser/599、gPodder/1878、ffmpeg-normalize/245、pydub/885 的状态与评论数已核对；文稿未拍板。"
+      ],
+      "next": [
+        "提交并推送本票文件及 packet；完成远端、链接和 resolution 读回；按协调指令暂缓地图 Decisions 与 packet complete。"
+      ]
+    }
+  ]
+}
