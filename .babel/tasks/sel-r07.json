@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "等待主协调会话串行写地图 Decisions；收到通知后读回地图并 complete sel-r07。拟追加 gist：滑窗、批次摘要/术语记忆与成品流程均有可借部分，音频事件投影和 21 句收益仍需实验确定。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:06:45+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "完成 M07 Smart Context research：候选横比与证据已入库，本票关闭；地图 Decisions so far 已由主协调会话追加并读回，主选/备选留给 grilling 票。",
+      "evidence": "git ls-files 输出 docs/selection/07-smart-context.md，git log origin/main 含文稿提交 e362515；GitHub contents API ref=main 返回 https://github.com/CometDash77/project-babel/blob/main/docs/selection/07-smart-context.md 与 SHA fec822fef56d46f1a33a711db58e6ab5821f753c。证据链接 https://github.com/darksylinc/context_translate、https://github.com/machinewrapped/llm-subtrans/issues/404、https://github.com/azratul/llm-subs/blob/main/CHANGELOG.md、https://github.com/Huanshere/VideoLingo/blob/main/docs/pages/docs/introduction.zh-CN.md 的 HEAD 抽查均为 200。gh issue view 46 读回 CLOSED，resolution https://github.com/CometDash77/project-babel/issues/46#issuecomment-5833686536 中文、链接和换行完整。gh issue view 32 读回 Decisions so far 中 M07 research 行及原有其他 research 行。遗留限制：未跑本地模型或两小时播客；21 句收益、多人音频事件投影、成本与恢复需要实验确定；本票不拍板主选/备选。"
     }
   ]
 }
