@@ -62,6 +62,21 @@
       "next": [
         "只提交本产出与 packet，推送 origin/main；按地图 Notes 读回远端文件与 resolution 评论，关票后等待主协调会话写 Decisions 并通知 complete。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:04:22+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M09 research 文稿已推送并关闭本票；按主协调会话指令暂不改共享地图 Decisions，也暂不 complete packet。",
+      "changed": [
+        "docs/selection/09-pre-tts-checks.md"
+      ],
+      "evidence": [
+        "git ls-files 有输出；git log origin/main 显示文稿提交 72204f0；GitHub contents API 与文件页 HTTP 200；Translate Toolkit、WeTextProcessing、COMET 三证据链接 HTTP 200；resolution 评论 issuecomment-5833712537 经 gh issue view 读回无转义损坏；gh issue close 50 成功。"
+      ],
+      "next": [
+        "等待主协调会话串行追加地图 Decisions 并通知本会话读回；之后再 complete sel-r09。拟追加 gist：规则检查、读法/音节与无参考语义评分各有成熟子能力，但完整播客文本关口及目标声音时长需实验确定。"
+      ]
     }
   ]
 }
