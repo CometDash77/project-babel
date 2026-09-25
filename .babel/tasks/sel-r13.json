@@ -62,6 +62,21 @@
       "next": [
         "仅提交本票文件与 packet，推送后逐项读回并关闭 #58；不改地图、不 complete packet。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:02:13+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M13 文稿已提交并推送，#58 已关闭；resolution 评论已写入并读回。",
+      "changed": [
+        "docs/selection/13-final-mix.md"
+      ],
+      "evidence": [
+        "git ls-files docs/selection/13-final-mix.md 有输出；git log origin/main -- docs/selection/13-final-mix.md 含 c7557bdb0cd8b65f426c6cb66392ace89f1e6c5f；远端文件 URL HTTP 200；FFmpeg filters、ffmpeg-normalize、Pydub issue、pyVideoTrans Synchronize 四个证据链接均 HTTP 200；gh issue view 58 读回 state=CLOSED 且评论正文无转义损坏。"
+      ],
+      "next": [
+        "等待主协调会话串行追加地图 Decisions 行；本会话不改地图、不 complete packet."
+      ]
     }
   ]
 }
