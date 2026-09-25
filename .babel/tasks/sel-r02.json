@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -62,6 +62,13 @@
       "next": [
         "只提交并推送本稿与 sel-r02 packet，读回远端文件和评论后关闭本票；共享地图 Decisions 与 packet complete 由主协调会话后续处理。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:04:08+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M02 人声与背景音分离 research 票已关闭；候选证据稿已提交推送，主选和备选留给 grilling。",
+      "evidence": "远端：git ls-files docs/selection/02-vocal-separation.md 有输出；git log origin/main -- docs/selection/02-vocal-separation.md 含 eb8aad4；https://github.com/CometDash77/project-babel/blob/eb8aad4/docs/selection/02-vocal-separation.md HTTP 200。证据链接抽查：PodcastMix 仓库、audio-separator v0.47.0 release、VideoLingo 技术说明、PodcastMix 推理源码均 HTTP 200。resolution 评论 https://github.com/CometDash77/project-babel/issues/36#issuecomment-5833659238 已由 gh 读回无转义损坏，本票 CLOSED。地图 #32 Decisions so far 已读回 M02 行，前置票原行仍保留；共享地图由主协调会话串行更新。遗留：未做 GPU/两小时播客实验；背景残留、长音频接缝、资源成本和权重许可需要实验确定。"
     }
   ]
 }
