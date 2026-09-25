@@ -73,6 +73,21 @@
       "next": [
         "提交并推送本票文件及 packet；完成远端、链接和 resolution 读回；按协调指令暂缓地图 Decisions 与 packet complete。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:01:36+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "远端读回发现 feedparser Read the Docs 旧链接返回 404，已改为可访问的官方仓库文档源码；没有改变研究结论。",
+      "changed": [
+        "docs/selection/01-acquisition.md"
+      ],
+      "evidence": [
+        "git ls-files 有产出文件；git log origin/main 含首次提交；远端文件 GET 200；修正后的 feedparser、podcast-dl、yt-dlp EJS、FFmpeg loudnorm 四个证据链接均 GET 200。"
+      ],
+      "next": [
+        "补推修正后再读回，发布 resolution 评论并关票；地图 Decisions 与 packet complete 等主协调会话通知。"
+      ]
     }
   ]
 }
