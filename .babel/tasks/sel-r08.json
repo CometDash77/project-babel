@@ -62,6 +62,21 @@
       "next": [
         "核对提交范围，提交并推送；远端文件、证据链接和 resolution 评论读回后关票。地图 Decisions 与 packet complete 留给主协调会话后续。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:03:28+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "发现 Translate Toolkit 网站与 GitHub 许可标签表述不一致；已核对仓库 REUSE.toml 和目标 checker.py 文件头，修正文稿为该源码 GPL-3.0-or-later。",
+      "changed": [
+        "docs/selection/08-translation.md"
+      ],
+      "evidence": [
+        "GitHub 仓库 REUSE.toml 默认 GPL-3.0-or-later，checker.py 文件头同；本次属于消除许可表述歧义，无需主选判断。"
+      ],
+      "next": [
+        "推送修正文稿，更新 resolution 评论中的提交引用并读回后关票。"
+      ]
     }
   ]
 }
