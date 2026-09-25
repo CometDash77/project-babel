@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "id": "sel-r05",
+  "objective": "解「M05 · 情绪识别（Speech Emotion Recognition）选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/05-emotion.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:06+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:11+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:17+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读地图与 M05 票、M05 模块稿及前置反查，开始核验 2025–2026 证据。",
+      "changed": [],
+      "evidence": [
+        "docs/agents/issue-tracker.md 在当前 worktree 不存在；地图与票面已由 gh issue view 读回。"
+      ],
+      "next": []
+    },
+    {
+      "at": "2026-09-25T13:09:49+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M05 候选横比：FunASR/emotion2vec+、SpeechBrain IEMOCAP、audEERING MSP-Podcast；区分可运行公开入口与目标播客成功案例，保留许可与实验门槛，不排序主备选。",
+      "changed": [
+        "docs/selection/05-emotion.md"
+      ],
+      "evidence": [
+        "已核官方模型卡、源码、GitHub API 和公开用户 issue；git diff --check 通过。"
+      ],
+      "next": [
+        "提交推送后核对 origin/main 与远端文件，抽查证据链接，再回写 resolution 和地图 Decisions。"
+      ]
+    }
+  ]
+}
