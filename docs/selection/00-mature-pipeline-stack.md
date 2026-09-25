@@ -1,6 +1,6 @@
 # 选型前置 · 成熟一条龙声音克隆项目技术栈反查
 
-调研日期：2026-09-25。范围是英文多人播客转中文重演的**参照项目**，不是本项目的主选/备选。核对了三个已有视频配音成品流程、官方文档/代码、公开演示、用户 issue、GitHub 元数据与 release；**没有安装、生成样片或跑两小时节目**。这里的“成熟”仅表示有可运行入口、成品演示和一定社区使用记录，不表示它们已通过本项目的多人重叠、情绪迁移、原时轴及长节目验收。
+调研日期：2026-09-25。范围是英文多人播客转中文重演的**参照项目**，不是本项目的主选/备选。原始调研核对了三个已有视频配音成品流程；文末补入同日并行证据中的三个候选。依据包括官方文档/代码、公开演示、用户 issue、GitHub 元数据与 release；**没有安装、生成样片或跑两小时节目**。这里的“成熟”仅表示有可运行入口、成品演示和一定社区使用记录，不表示它们已通过本项目的多人重叠、情绪迁移、原时轴及长节目验收。
 
 ## 样本、真实使用与维护快照
 
@@ -39,4 +39,32 @@
 3. **字幕时间轴不等于可保留原播客互动。** VideoLingo 明确无法多角色分别配音，[pyVideoTrans 批量模式禁用 diarization](https://github.com/jianchang512/pyvideotrans/blob/main/docs/architecture.md)，SoniTranslate 仅有最多 12 speaker 与 overlap reduction 的项目声明；任何一个都不足以证明绝对时间、双人同说、多轨背景的完整契约。[V](https://github.com/Huanshere/VideoLingo/blob/main/docs/pages/docs/introduction.zh-CN.md)、[S](https://github.com/R3gm/SoniTranslate)、[M03 本地稿](../research/03-diarization-overlap.md)。
 4. **开工门槛而非本票实验。** 统一一批获准使用的英文多人播客，保留原件、speaker/重叠真值、词时戳、参考音、译文、逐句成品与版本；核对中文可懂度/同人声线/表演/背景残留及两小时恢复。给每个 TTS 权重、ASR、分离权重独立核许可证。该清单是由上述覆盖缺口推导的**本项目建议**；效果和资源消耗均**需要实验确定**。[M11 稿](../research/11-voice-clone-tts.md)、[M12 稿](../research/12-long-audio-assembly.md)、[S 许可说明](https://github.com/R3gm/SoniTranslate#license)。
 
-本票不指定主选或备选；对应 M01–M13 的 grilling 票逐题拍板。
+## 并行证据补充：三个候选的边界
+
+以下是 2026-09-25 收到三份独立证据包后的增补，**不是三套报告投票，也不改变原票完成状态**。以固定提交的[VoiceStudio 配音工作区文档](https://github.com/debpalash/VoiceStudio/blob/47a06c03cf728675b259d53d11693dbd58005982/docs/electron-dubbing.md)、[YouDub VoxCPM 适配器](https://github.com/liuzhao1225/YouDub-webui/blob/0f6c75935e7a208c4b8ea56140e31c5316953fec/backend/app/adapters/voxcpm.py)和[SmartSub README](https://github.com/buxuku/SmartSub/blob/a2b164b3dd86388355c6a4b84e4a49825a0e7f57/README.md)核对功能声明；官方说明和源码只能证明路径存在，不能证明英文多人播客的实际效果。
+
+| 项目 | 一条龙路径与可借鉴点 | 成熟度证据和不能外推的边界 |
+| --- | --- | --- |
+| [VoiceStudio](https://github.com/debpalash/VoiceStudio) | 官方文档列出上传/URL、分离、ASR、按说话人克隆、翻译、TTS、时长适配、背景混音及导出；还写明中断恢复和保留对白外的原立体声。可供 M02/M09/M10/M12/M13 研究失败即停止、逐段缓存和背景回贴。 | 2026-04 才建仓，仍为 beta；[v0.5.6](https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.6) 于 09-23 发布，应用 AGPL-3.0，默认 OmniVoice 权重另有非商业限制，须逐权重核许可。文档明确 `dub-smoke` **模拟后端、未生成真实配音**；公开演示和第三方评测不能替代中文端到端及两小时实测。重叠检测不等于同说双轨保留。 |
+| [YouDub-webui](https://github.com/liuzhao1225/YouDub-webui) | 下载/导入、Demucs、Whisper、LLM 翻译、VoxCPM2、FFmpeg 输出；适配器对每条语音把源片段传给 `reference_wav_path`，短片段按 speaker 取参考缓存，故**克隆调用路径经源码确认**。可供 M09/M11 比较逐句参考与同人回退。 | [README 生产案例](https://github.com/liuzhao1225/YouDub-webui#真实生产案例)是作者自述，不能计作独立复现；Apache-2.0，09-22 仍有推送，但无编号稳定 release。翻译依赖 OpenAI 兼容 LLM；公开流程没有可核 diarization/重叠处理，日译中也自述尚未经真实日语媒体验收。声线一致性与原背景质量**需要实验确定**。 |
+| [SmartSub](https://github.com/buxuku/SmartSub) | 官方 README 给出本地转写→翻译→校对→TTS/ZipVoice 零样本克隆→FFmpeg 合成，桌面、CLI/MCP 均可串联。可供 M09/M12 借鉴参考音频质检、逐句超时人工清单。 | MIT，[v3.9.0](https://github.com/buxuku/SmartSub/releases/tag/v3.9.0) 于 09-24 发布；但这是**字幕优先**的成品路径，公开主流程未证明 M02 人声/背景分离、配音时原背景回贴或多人重叠保留。独立成品复现证据弱于前两项，列为**条件候选**，不把“烧录合成”计作 M13 原声背景混音。 |
+
+| 模块 | VoiceStudio | YouDub-webui | SmartSub |
+| --- | --- | --- | --- |
+| M01 获取/预处理 | 上传/URL、准备 | 上传/yt-dlp | 本地/在线视频下载 |
+| M02 人声/背景分离 | 分离并保存背景 | Demucs | 未证实 |
+| M03 diarization/重叠 | speaker 绑定、重叠警告；双轨未证 | 未证实 | 未证实 |
+| M04 ASR/时间轴 | ASR、段与词时戳 | Whisper、字幕段 | Whisper/FunASR 等、字幕段 |
+| M05 原声情绪提取 | 未证实 | 未证实 | 未证实 |
+| M06 原声韵律提取 | 输出时长适配，非原声提取 | 输出时长适配，非原声提取 | 输出语速控制，非原声提取 |
+| M07 上下文构建 | glossary/译文编辑；episode 事实图未证 | LLM 文本预处理；事实图未证 | 校对/词库；事实图未证 |
+| M08 翻译 | 多 provider | OpenAI 兼容 LLM | 多翻译服务 |
+| M09 TTS 前检查 | 可审段表、失败段重试 | 文本清理、speaker 参考回退 | 参考音质检、超时清单 |
+| M10 异常路由 | 任务恢复/失败停止；弃权契约未证 | 阶段缓存；弃权契约未证 | 错误提示；弃权契约未证 |
+| M11 克隆+中文 TTS | 多克隆后端；中文效果未实测 | VoxCPM2 源片段参考 | ZipVoice 中英零样本声明 |
+| M12 长音频 | 段缓存/Resume；两小时未实测 | 分段处理；两小时未实测 | 批处理；两小时未实测 |
+| M13 最终混音 | 分离背景+配音；质量未实测 | FFmpeg 合成；背景质量未实测 | 视频/字幕合成；背景回贴未证 |
+
+对照三份报告后需保留两处纠偏：其一，YouDub 的 README 未明确写“声音克隆”，但固定 SHA 源码确实传入源人声参考，故应写“克隆调用路径存在”，不能写“中文成品质量已证”；其二，不能把 VoiceStudio 的模拟后端 smoke test 当作真实配音通过。原样本中 SoniTranslate 仍可作**条件参照**，其[无声问题 #201](https://github.com/R3gm/SoniTranslate/issues/201)未见维护者答复，[长段截断 #184](https://github.com/R3gm/SoniTranslate/issues/184)也未给出本题可复用修复证据；近期 push 不抵消 2024-05 以来缺稳定 release 的风险。
+
+三份原始证据包的候选口径和个别“克隆/成熟”判断并不完全一致；上表仅收录本次能用一手材料核对的路径，**不把原始包整体视作已审定结论**。本票不指定主选或备选；对应 M01–M13 的 grilling 票逐题拍板。

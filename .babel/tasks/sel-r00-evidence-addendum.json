@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "id": "sel-r00-evidence-addendum",
+  "objective": "核对三份并行证据并补充成熟一条龙项目反查主稿，保留已关闭原票历史",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/00-mature-pipeline-stack.md"
+  ],
+  "constraints": [
+    "只改主稿；三份原始证据包和已关闭票不改动"
+  ],
+  "acceptance": [
+    "新增候选有一手证据和明确限制；与原三项目和十三模块稿的关系清晰；不作主选备选拍板"
+  ],
+  "references": [
+    "docs/selection/00-cross-audit-evidence-2026-09-25.md",
+    ".scratch/issue33-cn-ecosystem-evidence-pack-20260925.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T14:20:49+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T14:20:55+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T14:23:34+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "核对三份并行证据，主稿补充 VoiceStudio、YouDub-webui、SmartSub 的边界和 M01-M13 对照；保留旧票完成状态",
+      "changed": [
+        "docs/selection/00-mature-pipeline-stack.md"
+      ],
+      "evidence": [
+        "固定 SHA 三个官方链接 HEAD 200；YouDub voxcpm.py 源码核对 reference_wav_path 和 speaker fallback；VoiceStudio 官方文档承认 smoke 模拟后端；SmartSub README 仅证明字幕配音合成；git diff --check 通过"
+      ],
+      "next": [
+        "提交并推送主稿及补充 packet；不提交未经逐条审校的原始证据包，不进行 GPU 或两小时实验"
+      ]
+    },
+    {
+      "at": "2026-09-25T14:23:42+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "并行证据核对及主稿补充完成；六个候选保留分层边界，未作主选备选决定",
+      "evidence": "git diff --check 通过；VoiceStudio/YouDub/SmartSub 固定 SHA 链接均 HTTP 200；未做实际声音生成或两小时播客验收，相关质量和资源结论需要实验确定"
+    }
+  ]
+}
