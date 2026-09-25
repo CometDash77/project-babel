@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "等待主协调会话串行追加地图 Decisions 行；本会话不改地图、不 complete packet."
       ]
+    },
+    {
+      "at": "2026-09-25T14:04:43+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M13 research 完成：候选横比与证据稿已推送，#58 resolution 与地图 Decisions 行均已读回；未指定主选/备选。",
+      "evidence": "远端文稿 https://github.com/CometDash77/project-babel/blob/main/docs/selection/13-final-mix.md 可访问；FFmpeg filters https://ffmpeg.org/ffmpeg-filters.html、ffmpeg-normalize https://github.com/slhck/ffmpeg-normalize、Pydub issue https://github.com/jiaaro/pydub/issues/550、pyVideoTrans Synchronize https://github.com/jianchang512/pyvideotrans/blob/main/docs/Synchronize.md 均已抽查可打开；#58 resolution 评论已用 body-file 写入并 gh 读回；地图 #32 Decisions 已读回，前置票及既有行均保留且 M13 行存在；遗留限制：未运行音频样片、GPU 或两小时压力实验，背景泄漏、重叠保留、响度目标和跨平台时间坐标仍需实验确定。"
     }
   ]
 }
