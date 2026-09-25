@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r10",
+  "objective": "解「M10 · Jev 异常修复路由评估选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/10-jev-routing.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:49+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:55+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:09:07+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读规则、地图、票面与 M10/前置稿。docs/agents/issue-tracker.md 在当前工作树缺失，已记录。",
+      "changed": [],
+      "evidence": [
+        "gh issue view 32/52；docs/research/10-jev-routing.md；docs/selection/00-mature-pipeline-stack.md"
+      ],
+      "next": [
+        "核实 2025–2026 候选的使用、维护、许可与局限，写本票草稿。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:59:16+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已写 docs/selection/10-jev-routing.md 候选横比：一条龙边界、五类候选、真实试用与维护/许可、实验门槛；未拍板。",
+      "changed": [
+        "docs/selection/10-jev-routing.md"
+      ],
+      "evidence": [
+        "官方 Jev API/模型/限制；第三方 live API 示例；GitHub API release/issue/许可快照；scikit-learn、Transformers、OpenAI 官方文档。"
+      ],
+      "next": [
+        "核对草稿链接与范围，提交推送后做远端文件和 resolution 评论读回。"
+      ]
+    }
+  ]
+}
