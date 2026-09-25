@@ -60,6 +60,21 @@
       "next": [
         "验证引用与文件内容；提交推送；远端、评论、地图逐项读回。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:00:06+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M03 research 文稿已提交推送并关闭本票；保留 packet active，等待主协调会话串行更新地图 Decisions。",
+      "changed": [
+        "docs/selection/03-diarization.md"
+      ],
+      "evidence": [
+        "origin/main 提交 2d036bc；git ls-files 有文件；GitHub 文件 URL HTTP 200；三条核心证据链接 HTTP 200；resolution 评论 #issuecomment-5833651236 读回中文及链接完整；本票 CLOSED。"
+      ],
+      "next": [
+        "主协调会话写地图 Decisions 后通知本会话读回，再 complete sel-r03；本会话不自行写共享地图。"
+      ]
     }
   ]
 }
