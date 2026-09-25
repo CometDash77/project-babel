@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r13",
+  "objective": "解「M13 · 最终混音选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/13-final-mix.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:38+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:43+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:50+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读地图 Notes 与 M13 票面。",
+      "changed": [],
+      "evidence": [
+        "docs/agents/issue-tracker.md 在当前 worktree 缺失；GitHub issue #32/#58 可访问。"
+      ],
+      "next": [
+        "核对模块稿及官方资料，写候选横比。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:58:40+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M13 候选横比与证据稿，覆盖 FFmpeg、ffmpeg-normalize、ffmpeg-python、Pydub、Editly、auto-editor、mixing 与 Auphonic；明确只调研不拍板。",
+      "changed": [
+        "docs/selection/13-final-mix.md"
+      ],
+      "evidence": [
+        "引用 FFmpeg 官方滤镜/许可、ffmpeg-normalize README/release/issue、候选 GitHub README/API/issues、pyVideoTrans 与 SoniTranslate 成品流程。"
+      ],
+      "next": [
+        "仅提交本票文件与 packet，推送后逐项读回并关闭 #58；不改地图、不 complete packet。"
+      ]
+    }
+  ]
+}
