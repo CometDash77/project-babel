@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r08",
+  "objective": "解「M08 · 翻译工程（AiNiee 深度分析）选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/08-translation.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:13+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:21+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:21+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol。地图 Notes 对 research 票的显式模型例外适用；docs/agents/issue-tracker.md 在当前工作树不存在，后续按地图所述 gh 流程读回。",
+      "changed": [],
+      "evidence": [
+        "已读 AGENTS.md、docs/model-policy.md、地图 #32、本票 #48、M08 模块稿及前置反查稿。"
+      ],
+      "next": [
+        "核对候选的 2025–2026 证据并起草选型调研稿。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:59:24+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M08 候选横比与 AiNiee 源码复用边界，加入维护者对下文参考的回应；只提供调研，不定主选或备选。",
+      "changed": [
+        "docs/selection/08-translation.md"
+      ],
+      "evidence": [
+        "已核对 AiNiee 原版 CacheItem、AiNiee-Next CacheItem、VideoLingo 官方介绍三个来源 URL 可访问；GitHub API 重新核对候选热度、release、许可及 AiNiee issue 回复。"
+      ],
+      "next": [
+        "核对提交范围，提交并推送；远端文件、证据链接和 resolution 评论读回后关票。地图 Decisions 与 packet complete 留给主协调会话后续。"
+      ]
+    }
+  ]
+}
