@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "id": "wayfinder-m08-translation",
+  "objective": "研究 AiNiee 与成熟翻译器对英文播客逐句译为中文双层稿的工程复用边界，交付有来源的中文模块稿并同步 M08 票与地图",
+  "kind": "research",
+  "high_judgment": true,
+  "verifiable": true,
+  "scope": [
+    "docs/research/08-translation-engineering.md"
+  ],
+  "constraints": [
+    "个人用途；仅调研，不写实现代码；未运行不得宣称播客效果已验证"
+  ],
+  "acceptance": [
+    "中文模块稿含 AiNiee 文件级复用点、其他成熟候选四档分类、两层翻译先例、许可维护与实验清单；M08 与地图同步"
+  ],
+  "references": [
+    "docs/model-policy.md",
+    "docs/handoff.md",
+    "docs/agents/issue-tracker.md",
+    "docs/research/04-asr-timeline.md",
+    "docs/research/05-emotion.md",
+    "docs/research/06-prosody.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:20:50+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:06+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:24:28+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已核对 M08 与地图实时状态并认领；读取研究技能，确认 AiNiee 官方源码存在术语/禁翻、前文上下文、翻译+润色、缓存及检查，但无已验证播客效果且润色覆盖同一译文字段",
+      "changed": [],
+      "evidence": [
+        "gh issue view 9; gh api issue 9 blocked_by=0; gh api map sub_issues 含 #9; AiNiee main 295d2ff 源码与 7.2.4 release"
+      ],
+      "next": [
+        "补齐横向候选、写中文模块稿和实验清单，然后同步票与地图"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:29:33+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已写 M08 中文模块稿：先定义播客逐句验收对象，再逐模块核对 AiNiee；核实原版润色覆盖译文字段、Next 分离两字段；比较 Weblate、Translate Toolkit、Argos、OmegaT，标注证据缺口与实验清单",
+      "changed": [
+        "docs/research/08-translation-engineering.md"
+      ],
+      "evidence": [
+        "固定 AiNiee 295d2ff、Next 7f001a0 源码链接；GitHub release/issue/许可证实时核对；文档 58 行、53 链接、3 个相对链接目标均存在"
+      ],
+      "next": [
+        "仅提交 M08 文件和本任务包，随后在 #9 发布摘要并核对地图计数"
+      ]
+    }
+  ]
+}
