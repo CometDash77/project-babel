@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "id": "wayfinder-m09-pre-tts",
+  "objective": "调研英文播客中文重演在最终TTS前可执行的文本质量关口，并交付M09中文候选报告",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/research/09-pre-tts-checks.md"
+  ],
+  "constraints": [
+    "本会话仅M09；个人用途；只调研不写实现代码；质量分数不等于可播出质量"
+  ],
+  "acceptance": [
+    "逐候选以官方证据说明输入输出、复用点、误报风险、维护许可与四档分类；区分自动、模型辅助、听评；给朗读时长估算升级路径与需要实验确定清单；更新#10与地图#1"
+  ],
+  "references": [
+    "https://github.com/CometDash77/project-babel/issues/10",
+    "https://github.com/CometDash77/project-babel/issues/1",
+    "C:/Users/77182/.agents/skills/research/SKILL.md"
+  ],
+  "status": "done",
+  "owner": null,
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T03:21:18+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T03:21:30+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T03:22:00+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "GPT接手跨语言质量门槛与时长预测边界判断；已核对#10开放、无阻塞并认领。",
+      "changed": [],
+      "evidence": [
+        "GitHub #10: OPEN、assignee CometDash77、blocked_by=0；parent #1。/research 已读取。"
+      ],
+      "next": [
+        "核对官方候选资料并撰写M09报告"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:28:23+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成M09中文调研稿，按自动、模型辅助、听评分层；比较七组候选并给出三阶段中文时长估算路线。",
+      "changed": [
+        "docs/research/09-pre-tts-checks.md"
+      ],
+      "evidence": [
+        "官方README/源码/文档与GitHub API已核对；报告51行、33个链接、UTF-8无替换字符；未运行模型或真实播客实验。"
+      ],
+      "next": [
+        "提交报告，更新#10及地图#1并读回核查"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:31:22+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M09子票已附报告链接和结论并关闭；地图#1已加入M09决策索引。",
+      "changed": [],
+      "evidence": [
+        "GitHub读回：#10 CLOSED且有resolution评论；#1包含报告链接，原生子票completed=12/14；M14开放阻塞=1；报告提交9c928f1并可经GitHub contents读取。"
+      ],
+      "next": [
+        "限制：未运行模型或播客实测；阈值、误报、中文时长模型效果及听评待后续实验。"
+      ]
+    },
+    {
+      "at": "2026-09-25T03:31:23+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "完成M09个人用途中文调研，报告、子票、地图均已更新。",
+      "evidence": "报告51行、33个引用链接、无UTF-8替换字符；git diff --cached --check通过；#10 CLOSED，#1索引读回，原生子票12/14。"
+    }
+  ]
+}
