@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -77,6 +77,13 @@
       "next": [
         "关闭 M10 research 票；按协调会话指示等待共享地图 Decisions 串行更新，之后再 complete packet。遗留：本域效果/阈值/资源需实验确定。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:10:01+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M10 Jev 异常修复路由评估 research 票已关闭；候选横比和证据稿已入库，主选/备选留给 grilling 票。",
+      "evidence": "git ls-files 有 docs/selection/10-jev-routing.md；git log origin/main 含文稿提交 e2541f4；远端文件 https://github.com/CometDash77/project-babel/blob/main/docs/selection/10-jev-routing.md 经 GitHub API 读回可访问。证据链接 https://docs.typesafe.ai/api、https://github.com/Foadsf/jev-for-engineers、https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli 均直接访问返回 200。resolution https://github.com/CometDash77/project-babel/issues/52#issuecomment-5833705303 经 gh 读回无转义损坏，票面 CLOSED。地图 https://github.com/CometDash77/project-babel/issues/32 经 gh 读回 Decisions 共 14 行且 M10 行存在。遗留：中文播客动作准确率、阈值、时延、总成本、素材传输边界均需要实验确定；未跑模型/音频，未拍板。"
     }
   ]
 }
