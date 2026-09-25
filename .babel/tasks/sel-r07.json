@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r07",
+  "objective": "解「M07 · Smart Context 上下文构建选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/07-smart-context.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:15+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:21+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:37+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读 AGENTS.md、docs/model-policy.md、地图与本票，以及 M07 模块稿和前置反查稿。",
+      "changed": [],
+      "evidence": [
+        "docs/agents/issue-tracker.md 在当前 worktree 不存在；gh issue view 32/46 可读。"
+      ],
+      "next": [
+        "核对 2025–2026 一手证据并起草候选横比。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:59:04+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M07 候选证据横比；区分公开成品/用户使用、项目示例与待验证集成；未指定主选或备选。",
+      "changed": [
+        "docs/selection/07-smart-context.md"
+      ],
+      "evidence": [
+        "复核 M07 模块稿、前置反查、GitHub README/wiki/API/release、LLM-Subtrans 用户 issue #404 与已合并 PR #407；web 打开 context_translate、issue #404、llm-subs CHANGELOG、VideoLingo 文档。"
+      ],
+      "next": [
+        "仅提交并推送本票文稿及 packet；完成远端文件、证据链接、resolution 评论读回后关闭本票。共享地图 Decisions 与 packet complete 等主协调会话通知。"
+      ]
+    }
+  ]
+}
