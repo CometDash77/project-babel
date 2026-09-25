@@ -62,6 +62,21 @@
       "next": [
         "核对草稿链接与范围，提交推送后做远端文件和 resolution 评论读回。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:03:36+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M10 research 文稿 e2541f4 已推送，resolution 评论已用 body-file 发布并读回；未拍板。",
+      "changed": [
+        "docs/selection/10-jev-routing.md"
+      ],
+      "evidence": [
+        "git ls-files 有输出；git log origin/main 含 e2541f4；远端文件 URL 200；Jev API、Foadsf live API 示例、mDeBERTa 模型卡均 200；gh issue view 52 读回评论无转义损坏。"
+      ],
+      "next": [
+        "关闭 M10 research 票；按协调会话指示等待共享地图 Decisions 串行更新，之后再 complete packet。遗留：本域效果/阈值/资源需实验确定。"
+      ]
     }
   ]
 }
