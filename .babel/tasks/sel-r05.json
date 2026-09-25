@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -60,6 +60,28 @@
       "next": [
         "提交推送后核对 origin/main 与远端文件，抽查证据链接，再回写 resolution 和地图 Decisions。"
       ]
+    },
+    {
+      "at": "2026-09-25T13:59:29+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "M05 research 票已关闭；#42 读回为 CLOSED/COMPLETED。文稿、远端提交、远端文件 URL、3+证据链接与 resolution 评论均已核验。按并行规则暂不改地图 Decisions，也暂不 complete packet。",
+      "changed": [
+        "docs/selection/05-emotion.md"
+      ],
+      "evidence": [
+        "git ls-files docs/selection/05-emotion.md；git log origin/main -- docs/selection/05-emotion.md 显示 5af9514；远端 URL https://github.com/CometDash77/project-babel/blob/main/docs/selection/05-emotion.md 可打开；已打开 emotion2vec+、SpeechBrain IEMOCAP、audEERING MSP-Podcast 官方模型卡；gh issue view 42 读回 CLOSED/COMPLETED 且 resolution 评论无转义损坏。"
+      ],
+      "next": [
+        "等待主协调会话串行追加地图 Decisions 行并通知后，再读回地图并完成 packet。"
+      ]
+    },
+    {
+      "at": "2026-09-25T14:03:08+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M05 情绪识别 research 已完成：候选横比、公开证据、维护/许可边界和需要实验确定项均已写入；GitHub #42 已关闭。",
+      "evidence": "远端文件：https://github.com/CometDash77/project-babel/blob/main/docs/selection/05-emotion.md，提交 5af9514，git ls-files 与 git log origin/main 已读回；已抽查并打开 emotion2vec+、SpeechBrain IEMOCAP、audEERING MSP-Podcast 官方证据链接；#42 resolution 评论已用 body-file 写入并 gh 读回无转义损坏，票状态 CLOSED/COMPLETED；地图 #32 已重新 gh issue view 读回，前置票行与 M05 行均保留。遗留限制：未运行 GPU/长播客实验，逐句时间戳、跨域效果、校准、吞吐、兼容性及具体权重许可仍需实验或条款核对；主选/备选留给 grilling 票。"
     }
   ]
 }
