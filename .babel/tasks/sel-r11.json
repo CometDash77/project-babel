@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r11",
+  "objective": "解「M11 · 声音克隆与中文 TTS选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/11-voice-tts.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:40+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:45+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:52+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；按地图显式例外执行本 research 票。",
+      "changed": [],
+      "evidence": [
+        "已读 AGENTS.md、docs/model-policy.md、地图与本票正文、M11 模块稿及前置反查稿；docs/agents/issue-tracker.md 在当前 worktree 缺失。"
+      ],
+      "next": [
+        "核对官方资料、案例和维护快照，撰写候选横比。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:59:52+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "已完成 M11 六候选调研稿；补充官方示例、第三方集成、用户报告、GitHub 活跃度与许可，未指定主备选。",
+      "changed": [
+        "docs/selection/11-voice-tts.md"
+      ],
+      "evidence": [
+        "抽查 Breeze/Qwen/VideoLingo/Hugging Face 等链接 HTTP 200；IndexTTS 演示站 HTTP 404，改引可访问的官方演示页面源码并如实标记无法试听；尚未运行 GPU 或同批样本听评。"
+      ],
+      "next": [
+        "只提交并推送本票文稿与 packet；远端文件、证据链接、resolution 评论读回后关票；按协调会话要求暂不改地图或 complete packet。"
+      ]
+    }
+  ]
+}
