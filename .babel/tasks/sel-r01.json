@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -88,6 +88,13 @@
       "next": [
         "补推修正后再读回，发布 resolution 评论并关票；地图 Decisions 与 packet complete 等主协调会话通知。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:06:06+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M01 音频获取与预处理 research 已交付候选横比与证据，未指定主选/备选；GitHub 议题已关闭，地图 Decisions 已由主协调会话写入并读回。",
+      "evidence": "git ls-files docs/selection/01-acquisition.md 有输出；git log origin/main -- docs/selection/01-acquisition.md 含 75f410b 与 2c3e725；远端文件 https://github.com/CometDash77/project-babel/blob/main/docs/selection/01-acquisition.md HTTP 200。抽查 podcast-dl 官方选项、feedparser 官方文档源码、yt-dlp EJS、FFmpeg loudnorm 四条证据链接均 HTTP 200。resolution https://github.com/CometDash77/project-babel/issues/34#issuecomment-5833699089 由 gh 读回中文/链接完整，票状态 CLOSED/COMPLETED。地图 https://github.com/CometDash77/project-babel/issues/32 Decisions so far 已读回 M01 research 行，其他已有 research 行保留。遗留限制：未运行媒体或两小时/GPU 实验；长节目成功率、时轴/响度影响需实验确定；主选/备选留待 M01 grilling。"
     }
   ]
 }
