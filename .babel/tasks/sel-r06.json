@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -62,6 +62,13 @@
       "next": [
         "只提交本票文稿及 packet，推送后读回远端文件、resolution 评论并关票；依最新分工不改共享地图、不 complete packet。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:04:03+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M06 Prosody 选型调研已提交并关闭；六候选证据横比完成，主选/备选留给 grilling。",
+      "evidence": "git ls-files 确认 docs/selection/06-prosody.md 已跟踪；git log origin/main 含提交 8df4d825b4554edf34cf946bebd7b53933145f3a；远端文件 https://github.com/CometDash77/project-babel/blob/main/docs/selection/06-prosody.md 可访问。证据抽查 HTTP 200：https://audeering.github.io/opensmile-python/usage.html、https://parselmouth.readthedocs.io/en/stable/examples.html、https://github.com/maxrmorrison/torchcrepe。resolution https://github.com/CometDash77/project-babel/issues/44#issuecomment-5833665749 经 gh 读回无转义损坏，本票状态 CLOSED。地图 https://github.com/CometDash77/project-babel/issues/32 的 Decisions so far 已读回 M06 行，前置及其他已写行仍保留。限制：未跑音频/GPU 实验，两小时多人播客效果与成本需要实验确定；本票不拍板主选/备选。"
     }
   ]
 }
