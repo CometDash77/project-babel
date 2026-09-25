@@ -17,8 +17,8 @@
   "references": [
     "docs/model-policy.md"
   ],
-  "status": "active",
-  "owner": "gpt",
+  "status": "done",
+  "owner": null,
   "target": null,
   "transfers": 0,
   "delegated": false,
@@ -62,6 +62,13 @@
       "next": [
         "仅提交推送本稿与 packet；读回远端文件、证据链接和 resolution 评论，再关闭本票；共享地图和 packet complete 待协调会话。"
       ]
+    },
+    {
+      "at": "2026-09-25T14:08:12+00:00",
+      "action": "complete",
+      "model": "gpt",
+      "summary": "M12 长音频生成与拼接 research 已交付并关票；候选横比和实验门槛已入库，不指定主选/备选。",
+      "evidence": "git ls-files 列出 docs/selection/12-long-audio.md；git log origin/main 含提交 3cb0879；远端文件 https://github.com/CometDash77/project-babel/blob/main/docs/selection/12-long-audio.md 返回 HTTP 200。证据抽查：tts-audiobook-tool 仓库、ebook2audiobook issue 2093、OpenTimelineIO 时间线文档、FFmpeg 滤镜文档均 HTTP 200。M12 research 票 https://github.com/CometDash77/project-babel/issues/56 状态 CLOSED，resolution 评论 https://github.com/CometDash77/project-babel/issues/56#issuecomment-5833722756 经 gh 读回无转义损坏。地图 https://github.com/CometDash77/project-babel/issues/32 的 Decisions so far 已读回 M12 行及其余现有行。限制：未跑音频/GPU 或两小时续跑实验；Bridge 缺原始项目链接；跨段音色、绝对时间漂移和重叠效果需要实验确定；主选/备选留 M12 grilling 票。"
     }
   ]
 }
