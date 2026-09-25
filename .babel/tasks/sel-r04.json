@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "id": "sel-r04",
+  "objective": "解「M04 · ASR 与精确时间轴选型调研（research）」",
+  "kind": "research",
+  "high_judgment": false,
+  "verifiable": true,
+  "scope": [
+    "docs/selection/04-asr-timeline.md"
+  ],
+  "constraints": [
+    "只调研不拍板；个人用途"
+  ],
+  "acceptance": [
+    "票面要求全部覆盖；结论带证据链接；不确定处标需要实验确定；通过地图 Notes 的关票前读回"
+  ],
+  "references": [
+    "docs/model-policy.md"
+  ],
+  "status": "active",
+  "owner": "gpt",
+  "target": null,
+  "transfers": 0,
+  "delegated": false,
+  "events": [
+    {
+      "at": "2026-09-25T13:08:05+00:00",
+      "action": "new",
+      "model": "user",
+      "summary": "Task packet created"
+    },
+    {
+      "at": "2026-09-25T13:08:16+00:00",
+      "action": "claim",
+      "model": "gpt",
+      "summary": "Ownership claimed"
+    },
+    {
+      "at": "2026-09-25T13:08:27+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "执行模型 = gpt-6-sol；已读项目规则、地图与本票，开始 M04 research。",
+      "changed": [],
+      "evidence": [
+        "地图 #32 的 research 模型例外；本票 #40；docs/agents/issue-tracker.md 在当前检出中不存在。"
+      ],
+      "next": [
+        "读取模块稿与前置反查，补充 2025–2026 网络证据。"
+      ]
+    },
+    {
+      "at": "2026-09-25T13:58:38+00:00",
+      "action": "note",
+      "model": "gpt",
+      "summary": "完成 M04 候选证据稿：覆盖 WhisperX、faster-whisper、NeMo NFA、whisper-timestamped、stable-ts、whisper-diarization；补入成品案例、维护/license 快照、时间轴接口事实和实验门槛。",
+      "changed": [
+        "docs/selection/04-asr-timeline.md"
+      ],
+      "evidence": [
+        "基于 docs/research/04-asr-timeline.md、docs/selection/00-mature-pipeline-stack.md、官方仓库/文档、GitHub API 快照与 VideoLingo issue 评论；未运行模型/GPU。"
+      ],
+      "next": [
+        "提交并推送后做 git/远端文件、链接、resolution 评论读回。"
+      ]
+    }
+  ]
+}
